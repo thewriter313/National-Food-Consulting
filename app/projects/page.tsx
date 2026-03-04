@@ -109,7 +109,7 @@ export default function Projects() {
                   <div className="w-20 h-14 flex items-center justify-start">
                     {project.logo ? (
                       <Image
-                        src={`/logos/project_logos/${project.logo}`}
+                        src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/project_logos/${project.logo}`}
                         alt={project.client}
                         width={80}
                         height={56}

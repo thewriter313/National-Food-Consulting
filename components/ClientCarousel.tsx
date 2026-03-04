@@ -19,7 +19,7 @@ export default function ClientCarousel() {
               /* ── LOGO IMAGE CARD — transparent background ── */
               <div className="bg-gray-500 w-40 h-20 rounded-xl flex items-center justify-center px-3 group-hover:scale-105 transition-all duration-300 overflow-hidden">
                 <Image
-                  src={`/logos/project_logos/${client.logo}`}
+                  src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/project_logos/${client.logo}`}
                   alt={client.name}
                   width={140}
                   height={64}

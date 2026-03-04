@@ -22,7 +22,7 @@ export default function BrandBadge({ brand }: { brand: Brand }) {
         title={brand.name}
       >
         <Image
-          src={`/logos/brand_logos/${brand.logo}`}
+          src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/logos/brand_logos/${brand.logo}`}
           alt={brand.name}
           width={120}
           height={48}
